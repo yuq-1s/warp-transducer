@@ -4,6 +4,7 @@
 #include <torch/extension.h>
 #include "rnnt.h"
 
+#define WARPRNNT_ENABLE_GPU
 #ifdef WARPRNNT_ENABLE_GPU
     #include "THC.h"
     extern THCState* state;
